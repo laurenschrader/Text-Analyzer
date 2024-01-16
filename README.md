@@ -20,6 +20,24 @@
 
 ## Tests (TDD) 
 
+Describe: wordCounter()
+
+Test1: "It should return 1 if a passage has just one word."
+Code:
+const text = "hello";
+wordCounter(text);
+Expected Output: 1
+
+Test2: "It should return 2 if a passage has two words."
+Code:
+const text = "hello there";
+wordCounter(text);
+Expected Output: 2
+
+Test3: "It should return 0 for an empty string."
+Code: wordCounter("");
+Expected Output: 0
+
 ## Known Bugs
 
 _No known bugs or issues. If you find any, please report them._
