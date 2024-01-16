@@ -108,6 +108,14 @@ Notes: Utilize  String.prototype.includes(), which checks to see if a string inc
 So, we updated conditional here:
 element.toLowerCase().includes(word.toLowerCase())
 
+Test7: "It should omit the following words: "zoinks", "muppeteer", "biffaroni", and "loopdaloop"
+Code:
+const text = "Red! zoinks, muppeteer, biffaroni, and loopdaloop Red. ";
+const word = "zoinks", "muppeteer", "biffaroni", "loopdaloop";
+omitOffensiveWords(word, text);
+Expected Output: "
+Notes: Utilize  String.prototype.includes(), which checks to see if a string includes another string or character. Essentially, use this function to check whether the word (e.g. red) is included in text (e.g. ["Red!", "Red.", "I", "like", "red,", "don't", "you?"]) regardless of anything else included, like punctuation.
+
 
 
 

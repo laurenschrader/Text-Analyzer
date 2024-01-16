@@ -27,3 +27,17 @@ function numberOfOccurencesInText(word, text) {
   });
   return wordCount;
 }
+
+function omitOffensiveWords(text) {
+  const offensiveWords = ['zoinks', 'muppeteer', 'biffaroni', 'loopdaloop'];
+
+  offensiveWords.forEach(word => {
+    const wordPattern = new RegExp(word);
+
+    if (text.includes(word)) {
+      text = text.replace(wordPattern, '');
+    }
+  });
+
+  return text;
+}
