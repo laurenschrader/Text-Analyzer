@@ -27,20 +27,24 @@ Code:
 const text = "hello";
 wordCounter(text);
 Expected Output: 1
+Notes:
 
 Test2: "It should return 2 if a passage has two words."
 Code:
 const text = "hello there";
 wordCounter(text);
 Expected Output: 2
+Notes:
 
 Test3: "It should return 0 for an empty string."
 Code: wordCounter("");
 Expected Output: 0
+Notes: Utilize string.length to check that length is 0.
 
 Test4: "It should return 0 for a string that is only spaces."
 Code: wordCounter("            ");
 Expected Output: 0
+Notes: Utilize String.prototype.trim() to trim all whitespace from both ends of the string.
 
 ## Known Bugs
 
