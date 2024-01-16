@@ -38,6 +38,10 @@ Test3: "It should return 0 for an empty string."
 Code: wordCounter("");
 Expected Output: 0
 
+Test4: "It should return 0 for a string that is only spaces."
+Code: wordCounter("            ");
+Expected Output: 0
+
 ## Known Bugs
 
 _No known bugs or issues. If you find any, please report them._

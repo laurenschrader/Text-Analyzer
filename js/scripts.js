@@ -1,8 +1,8 @@
 // Business Logic
 
 function wordCounter(text) {
-  //test3:
-  if (text.length === 0) {
+  //test3, test4:
+  if (text.trim().length === 0) {
     return 0;
   }
   let wordCount = 0;
