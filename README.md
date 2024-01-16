@@ -73,6 +73,14 @@ numberOfOccurrencesInText(word, text);
 Expected Output: 1
 Notes:
 
+Test: "It should return 0 occurrences of a word when the word and the text are different."
+Code:
+const text = "red";
+const word = "blue";
+numberOfOccurrencesInText(word, text);
+Expected Output: 0
+Notes:
+
 
 
 ## Known Bugs
