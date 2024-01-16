@@ -87,7 +87,7 @@ const text = "red blue red red red green";
 const word = "red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 4
-Notes:
+Notes: Once again, we split the text passage into an array and create a wordCount that starts at 0. We loop through this array, and if the word we've passed into our function is equal to the element in textArray, we've found an instance of the word and we can increment wordCount by one. Finally, we return wordCount.
 
 
 
