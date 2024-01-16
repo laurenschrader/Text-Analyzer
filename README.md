@@ -46,6 +46,15 @@ Code: wordCounter("            ");
 Expected Output: 0
 Notes: Utilize String.prototype.trim() to trim all whitespace from both ends of the string.
 
+Test5: "It should not count numbers as words."
+Code: wordCounter("hi there 77 19");
+Expected Output: 2
+Notes: Utilize Number() (built-in JavaScript function) which either returns a  number or NaN. 
+
+Number("16") will return 16 while Number("hi") returns NaN. So if something's not a number (NaN), we will increment our wordCount. If it is a number, we won't increment it.
+
+Also, we changed parameter variable name from "word" to "element" to accurately reflect that it may not always be a word..
+
 ## Known Bugs
 
 _No known bugs or issues. If you find any, please report them._

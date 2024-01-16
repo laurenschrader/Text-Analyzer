@@ -7,9 +7,11 @@ function wordCounter(text) {
   }
   let wordCount = 0;
   const textArray = text.split(" ");
-  //test1, test2
-  textArray.forEach(function (word) {
-    wordCount++;
+  //test1, test2, test5
+  textArray.forEach(function (element) {
+    if (!Number(element)) {
+      wordCount++;
+    }
   });
   return wordCount;
 }
