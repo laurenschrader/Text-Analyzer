@@ -19,10 +19,10 @@ function wordCounter(text) {
 function numberOfOccurencesInText(word, text) {
   const textArray = text.split(" ");
   let wordCount = 0;
-  //test2, test3
+  //test2, test3, test 6
   textArray.forEach(function (element) {
-    if (word.toLowerCase() === element.toLowerCase()) {
-      wordCount++
+    if (element.toLowerCase().includes(word.toLowerCase())) {
+      wordCount++;
     }
   });
   return wordCount;

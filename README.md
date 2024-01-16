@@ -97,6 +97,18 @@ numberOfOccurrencesInText(word, text);
 Expected Output: 3
 Notes: Utilize String.prototype.toLowerCase() on both word and element to account for uppercase/lowercase variations.
 
+Test: "It should return a word match regardless of punctuation."
+Code:
+const text = "Red! Red. I like red, green, and yellow.";
+const word = "Red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 3
+Notes: Utilize  String.prototype.includes(), which checks to see if a string includes another string or character. Essentially, use this function to check whether the word (e.g. red) is included in text (e.g. ["Red!", "Red.", "I", "like", "red,", "don't", "you?"]) regardless of anything else included, like punctuation.
+
+So, we updated conditional here:
+element.toLowerCase().includes(word.toLowerCase())
+
+
 
 
 ## Known Bugs
