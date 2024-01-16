@@ -55,6 +55,16 @@ Number("16") will return 16 while Number("hi") returns NaN. So if something's no
 
 Also, we changed parameter variable name from "word" to "element" to accurately reflect that it may not always be a word..
 
+Describe: numberOfOccurrencesInText()
+
+Test: "It should return 0 occurrences of a word for an empty string."
+Code:
+const text = "";
+const word = "red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 0
+Notes:
+
 ## Known Bugs
 
 _No known bugs or issues. If you find any, please report them._

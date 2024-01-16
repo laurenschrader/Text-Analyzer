@@ -15,3 +15,7 @@ function wordCounter(text) {
   });
   return wordCount;
 }
+
+function numberOfOccurencesInText(word, text) {
+  return 0;
+}
