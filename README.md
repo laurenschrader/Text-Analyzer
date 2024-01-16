@@ -57,13 +57,23 @@ Also, we changed parameter variable name from "word" to "element" to accurately 
 
 Describe: numberOfOccurrencesInText()
 
-Test: "It should return 0 occurrences of a word for an empty string."
+Test1: "It should return 0 occurrences of a word for an empty string."
 Code:
 const text = "";
 const word = "red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 0
 Notes:
+
+Test2: "It should return 1 occurrence of a word when the word and the text are the same."
+Code:
+const text = "red";
+const word = "red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 1
+Notes:
+
+
 
 ## Known Bugs
 
