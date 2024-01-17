@@ -116,6 +116,19 @@ omitOffensiveWords(word, text);
 Expected Output: "
 Notes: Utilize  String.prototype.includes(), which checks to see if a string includes another string or character. Essentially, use this function to check whether the word (e.g. red) is included in text (e.g. ["Red!", "Red.", "I", "like", "red,", "don't", "you?"]) regardless of anything else included, like punctuation.
 
+Test8: "If an empty string is passed in as a word, it should return 0."
+Code:
+const word = "";
+const text = "red RED Red!";
+numberOfOccurrencesInText(word, text);
+Expected Output: 0
+Notes: We add a conditional to check if the word parameter has 0 characters in it after being trimmed, and if so, return 0:
+
+...
+if (word.trim().length === 0) {
+  return 0;
+}
+...
 
 
 
