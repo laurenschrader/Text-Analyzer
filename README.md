@@ -144,6 +144,21 @@ if ((text.trim().length === 0) || (word.trim().length === 0)) {
     return null;
   }
 
+Test2: "It should return a non-matching word in a p tag."
+Code:
+const word = "hello";
+const text = "yo";
+boldPassage(word, text);
+Expected Output: <p>yo</p>
+Notes: Implemented:
+
+else {
+const p = document.createElement("p");
+  p.append(text);
+  return p;
+}
+
+.. i.e. if word does not match, it shouldnt be bolded. it will just return the paragraph element, with text appended inside.
 
 
 ## Known Bugs
