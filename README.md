@@ -130,6 +130,20 @@ if (word.trim().length === 0) {
 }
 ...
 
+Describe: boldPassage()
+
+Test1: "It should return null if no word or text is entered."
+Code:
+const text = "";
+const word = "";
+boldPassage(word, text);
+Expected Output: null
+Notes: Implemented: 
+
+if ((text.trim().length === 0) || (word.trim().length === 0)) {
+    return null;
+  }
+
 
 
 ## Known Bugs
