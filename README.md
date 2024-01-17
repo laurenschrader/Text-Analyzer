@@ -160,6 +160,25 @@ const p = document.createElement("p");
 
 .. i.e. if word does not match, it shouldnt be bolded. it will just return the paragraph element, with text appended inside.
 
+Test3: "It should return a matching word in a strong tag."
+Code:
+const word = "hello";
+const text = "hello";
+boldPassage(word, text);
+Expected Output: <p><strong>hello</strong></p>
+Notes: Implemented/Altered Test 2 code:
+const p = document.createElement("p");
+  if (word === text) {
+    const bold = document.createElement("strong");
+    bold.append(text);
+    p.append(bold);
+  } else {
+    p.append(text);
+  }
+  return p;
+
+
+
 
 ## Known Bugs
 
