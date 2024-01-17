@@ -177,6 +177,28 @@ const p = document.createElement("p");
   }
   return p;
 
+Test4: "It should wrap words that match in strong tags but not words that don't."
+Code:
+const word = "hello";
+const text = "hello there";
+boldPassage(word, text);
+Expected Output: <p><strong>hello</strong> there</p>
+Notes: Implemented/Altered Test2, 3 code:
+
+const p = document.createElement("p");
+  let textArray = text.split(" ");
+  textArray.forEach(function(element) {
+    if (word === element) {
+      const bold = document.createElement("strong");
+      bold.append(element);
+      p.append(bold);
+    } else {
+      p.append(element);
+    }
+    p.append(" ");
+  });
+  return p;
+
 
 
 

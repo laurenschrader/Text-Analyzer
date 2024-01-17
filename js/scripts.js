@@ -68,14 +68,18 @@ function boldPassage(word, text) {
   if ((text.trim().length === 0) || (word.trim().length === 0)) {
     return null;
   }
-  //test2, test3
+  //test2, test3, test4
   const p = document.createElement("p");
-  if (word === text) {
-    const bold = document.createElement("strong");
-    bold.append(text);
-    p.append(bold);
-  } else {
-    p.append(text);
-  }
+  let textArray = text.split(" ");
+  textArray.forEach(function (element) {
+    if (word === element) {
+      const bold = document.createElement("strong");
+      bold.append(element);
+      p.append(bold);
+    } else {
+      p.append(element);
+    }
+    p.append(" ");
+  });
   return p;
 }
